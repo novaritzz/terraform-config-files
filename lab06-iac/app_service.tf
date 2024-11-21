@@ -18,7 +18,7 @@ resource "azurerm_linux_web_app" "webapp" {
 
   site_config {
     ftps_state        = "Disabled"
-    min_tls_version   = var.tls_version
+    minimum_tls_version   = var.tls_version
     linux_fx_version  = var.runtime_version
   }
 
